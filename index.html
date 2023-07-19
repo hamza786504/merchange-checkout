@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Merchant Page</title>
+</head>
+
+<body>
+    <section class="pt-5 pb-4 user_info_section">
+        <div class="icon_image">
+            <img src="images/profile-image.png" style="object-fit: cover;" alt="" />
+        </div>
+        <div class="details">
+            <table>
+                <tr>
+                    <td class="fw-bold" style="max-width: 300px; word-wrap: break-word;">Merchant ID:</td>
+                    <td class="ps-4" style="max-width: 300px; word-wrap: break-word;">VARIABLE_MERCHANT</td>
+                </tr>
+                <tr>
+                    <td class="fw-bold" style="max-width: 300px; word-wrap: break-word;">Store Name:</td>
+                    <td class="ps-4" style="max-width: 300px; word-wrap: break-word;">VARIABLE_NAME</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="checkout_outer">
+        <div class="notify_bar d-flex flex-row flex-wrap justify-content-between">
+            <p class="mb-0 d-flex flex-row items-center">
+                <span class="icon">
+                    <i class="fa-sharp fa-solid fa-circle-info" style="font-size: 18px;"></i>
+                </span>
+                <span class="ps-3">Please do not close this window until the payment is confirmed.</span>
+            </p>
+            <p class="ms-3 ps-3 ms-sm-0 ps-sm-0 mt-3 mt-sm-0 mb-0">
+                Payment page expires in <span class="text-primary fw-bold">59:30</span>
+            </p>
+        </div>
+        <div class="checkout_cover d-flex flex-wrap flex-wrap flex-col flex-md-row">
+            <div class="p-3 col-12 col-md-4">
+                <div class="qr_code_image_cover">
+                    <img src="images/qr-code.png" alt="qr" />
+                </div>
+                <div class="pt-5 pb-3 pb-md-0 row">
+                    <div class="col-12">
+                        <div class="detail_box">
+                            <div class="row" style="display: flex; align-items: center;">
+                                <div class="col-5 h-100">
+                                    <p class="fw-bold text-black mb-0"
+                                        style="max-width: 100%; word-wrap: break-word; display: inline-block;">Email:
+                                    </p>
+                                </div>
+                                <div class="col-7 text-end text-sm-start">
+                                    <p class="mb-0"
+                                        style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                        example@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detail_box">
+                            <div class="row" style="display: flex; align-items: center;">
+                                <div class="col-5 h-100">
+                                    <p class="fw-bold text-black mb-0"
+                                        style="max-width: 100%; word-wrap: break-word; display: inline-block;">Amount:
+                                    </p>
+                                </div>
+                                <div class="col-7 text-end text-sm-start">
+                                    <p class="mb-0"
+                                        style="max-width: 100%; word-wrap: break-word; display: inline-block;">5000
+                                        <span>USDT</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detail_box">
+                            <div class="row" style="display: flex; align-items: center;">
+                                <div class="col-5 h-100">
+                                    <p class="fw-bold text-black mb-0"
+                                        style="max-width: 100%; word-wrap: break-word; display: inline-block;">Store
+                                        Website:</p>
+                                </div>
+                                <div class="col-7 text-end text-sm-start">
+                                    <a href="https://www.example.com"
+                                        style="max-width: 100%; word-wrap: break-word; display: inline-block;">www.example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mt-4 pt-2 text-center detail_box">
+                            <button class="mx-auto btn btn-danger btn-round">Cancel Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-12 d-md-none mt-5">
+                <div class="horizontal-line">
+                    <hr width="90%" style="margin: 0 auto; color: black;" />
+                </div>
+            </div> -->
+            <div class="col-right col-12 col-md-8">
+                <div class="col-right-top">
+                    <div class="pt-3 pt-md-0 row">
+                        <div class="col-12">
+                            <div class="detail_box">
+                                <div class="row" style="display: flex; align-items: center; min-height: 50px;">
+                                    <div class="col-4">
+                                        <p class="fw-bold text-black mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            Pending Payment:</p>
+                                    </div>
+                                    <div class="col-8 text text-end text-sm-start">
+                                        <p class="mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">Send
+                                            your payment according details below:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_box">
+                                <div class="row" style="display: flex; align-items: center; min-height: 50px;">
+                                    <div class="col-4">
+                                        <p class="fw-bold text-black mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            Wallet Address:</p>
+                                    </div>
+                                    <div class="col-8 text text-end text-sm-start" style="overflow-x: hidden;">
+                                        <p class="mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            TJg9fgkvAAzDR3GoeTQ9kdqGFBPz7Bn1rc</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_box">
+                                <div class="row" style="display: flex; align-items: center; min-height: 50px;">
+                                    <div class="col-4">
+                                        <p class="fw-bold text-black mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            Network Type:</p>
+                                    </div>
+                                    <div class="col-8 text text-end text-sm-start">
+                                        <p class="mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">TRC20
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_box">
+                                <div class="row" style="display: flex; align-items: center; min-height: 50px;">
+                                    <div class="col-4">
+                                        <p class="fw-bold text-black mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            Currency Abbreviations:</p>
+                                    </div>
+                                    <div class="col-8 text text-end text-sm-start">
+                                        <p class="mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">USDT
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_box">
+                                <div class="row" style="display: flex; align-items: center; min-height: 50px;">
+                                    <div class="col-4">
+                                        <p class="fw-bold text-black mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            Amount must be sent:</p>
+                                    </div>
+                                    <div class="col-8 text text-end text-sm-start">
+                                        <p class="mb-0"
+                                            style="max-width: 100%; word-wrap: break-word; display: inline-block;">
+                                            100.504049</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-12 mt-5">
+                        <div class="horizontal-line">
+                            <hr width="90%" style="margin: 0 auto; color: black;" />
+                        </div>
+                    </div> -->
+                <div class="p-3">
+                    <div class="py-5 pb-md-0 pt-md-0 row">
+                        <div class="col-12 mt-1">
+                            <p class="text-center text-md-start fw-bold text-danger">*If you're sending from platforms
+                                like
+                                Binance, please remember to add an additional fee for the transfer, such as $1 for
+                                Binance
+                                fees. This will result in a total amount of 2.052230 USDT</p>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <p class="text-center text-md-start fw-bold text-dark">*Please make sure that the amount you
+                                sent
+                                matches the amount indicated on this website. Otherwise, the payment will not be
+                                credited
+                                automatically. Additionally, please avoid closing this page and keep this tab active.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="need_help mt-2 text-center mx-auto text-black">Need Help? <a href="#" class="fw-bold">@adaks_media</a></p>
+    <section class="videos_section py-4">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="video_outer pt-4 p-3">
+                    <h3 class="video_heading text-white pb-3 text-center">How to add balance by Binance</h3>
+                    <div class="video_cover">
+                        <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/Jd-naMp1wDE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 mt-md-0 col-12 col-md-6">
+                <div class="video_outer pt-4 p-3">
+                    <h3 class="video_heading text-white pb-3 text-center">How to add balance by Wallet</h3>
+                    <div class="video_cover">
+                        <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/Jd-naMp1wDE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
+        integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
