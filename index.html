@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <title>Merchant Page</title>
 </head>
 
@@ -19,20 +19,14 @@
         <div class="icon_image">
             <img src="images/profile-image.png" style="object-fit: cover;" alt="" />
         </div>
-        <div class="details">
-            <table>
-                <tr>
-                    <td class="fw-bold" style="max-width: 300px; word-wrap: break-word;">Merchant ID:</td>
-                    <td class="ps-4" style="max-width: 300px; word-wrap: break-word;">VARIABLE_MERCHANT</td>
-                </tr>
-                <tr>
-                    <td class="fw-bold" style="max-width: 300px; word-wrap: break-word;">Store Name:</td>
-                    <td class="ps-4" style="max-width: 300px; word-wrap: break-word;">VARIABLE_NAME</td>
-                </tr>
-            </table>
+        <div class="mt-4 details">
+            <h6 class="text-center fw-bold" style="max-width: 300px; word-wrap: break-word;">Merchant ID:</h6>
+            <h6 class="text-center" style="max-width: 300px; word-wrap: break-word;">VARIABLE_MERCHANT</h6>
+            <h6 class="text-center fw-bold" style="max-width: 300px; word-wrap: break-word;">Store Name:</h6>
+            <h6 class="text-center" style="max-width: 300px; word-wrap: break-word;">VARIABLE_NAME</h6>
         </div>
     </section>
-    <section class="checkout_outer">
+    <section class="section_outer">
         <div class="notify_bar d-flex flex-row flex-wrap justify-content-between">
             <p class="mb-0 d-flex flex-row items-center">
                 <span class="icon">
@@ -52,14 +46,14 @@
                 <div class="pt-5 pb-3 pb-md-0 row">
                     <div class="col-12 mb-3">
                         <div class="detail_box">
-                            <div class="row flex-row" style="display: flex; align-items: center;">
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 col-xl-5 h-100">
-                                    <p class="text-center text-sm-start w-100 fw-bold text-black mb-0"
+                            <div class="row" style="display: flex; align-items: center;">
+                                <div class="col-12 h-100">
+                                    <p class="text-center w-100 fw-bold text-black mb-0"
                                         style="max-width: 100%; word-wrap: break-word; display: inline-block;">Email:
                                     </p>
                                 </div>
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-8 col-xl-7 text-start">
-                                    <p class="mb-0 text-center text-sm-start w-100"
+                                <div class="col-12 text-center">
+                                    <p class="mb-0 text-center w-100"
                                         style="max-width: 100%; word-wrap: break-word; display: inline-block;">
                                         example@gmail.com</p>
                                 </div>
@@ -69,13 +63,13 @@
                     <div class="col-12 mb-3">
                         <div class="detail_box">
                             <div class="row" style="display: flex; align-items: center;">
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 col-xl-5 h-100">
-                                    <p class="text-center text-sm-start w-100 fw-bold text-black mb-0"
+                                <div class="col-12 h-100">
+                                    <p class="text-center w-100 fw-bold text-black mb-0"
                                         style="max-width: 100%; word-wrap: break-word; display: inline-block;">Amount:
                                     </p>
                                 </div>
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-8 col-xl-7 text-start">
-                                    <p class="mb-0 text-center text-sm-start w-100"
+                                <div class="col-12 text-start">
+                                    <p class="mb-0 text-center w-100"
                                         style="max-width: 100%; word-wrap: break-word; display: inline-block;">5000
                                         <span>USDT</span>
                                     </p>
@@ -86,13 +80,13 @@
                     <div class="col-12 mb-3">
                         <div class="detail_box">
                             <div class="row" style="display: flex; align-items: center;">
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-4 col-xl-5 h-100">
-                                    <p class="text-center text-sm-start w-100 fw-bold text-black mb-0"
+                                <div class="col-12 h-100">
+                                    <p class="text-center w-100 fw-bold text-black mb-0"
                                         style="max-width: 100%; word-wrap: break-word; display: inline-block;">Store
                                         Website:</p>
                                 </div>
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-8 col-xl-7 text-start">
-                                    <a class="text-center text-sm-start w-100" href="https://www.example.com"
+                                <div class="col-12 text-center">
+                                    <a class="text-center w-100" href="https://www.example.com"
                                         style="max-width: 100%; word-wrap: break-word; display: inline-block;">www.example.com</a>
                                 </div>
                             </div>

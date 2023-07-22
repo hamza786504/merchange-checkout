@@ -18,7 +18,7 @@ body {
 .user_info_section{
     padding: 0 10px;
 }
-.checkout_outer, .videos_section {
+.section_outer, .videos_section {
     padding: 0px 10px;
     max-width: 1080px;
     margin: auto;
@@ -56,7 +56,20 @@ body {
 .text-primary {
     color: var(--orange) !important;
 }
-
+.btn-primary{
+    background-color: var(--orange) !important;
+    border: none;
+}
+.form_outer{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+.form_outer input{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
 .user_info_section {
     max-width: 330px;
     aspect-ratio: 1/1;
