@@ -72,17 +72,14 @@ body {
 }
 .user_info_section {
     max-width: 330px;
-    aspect-ratio: 1/1;
     width: 100%;
     margin: auto;
 }
 
 .icon_image {
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    aspect-ratio: 1;
     margin: auto;
-    height: 100%;
-    width: 100%;
     border-radius: 50%;
     overflow: hidden;
 }
