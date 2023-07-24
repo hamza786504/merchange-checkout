@@ -156,9 +156,15 @@ table td:nth-child(2):hover {
 }
 .col-right{
     border-top: 1px dashed black;
+    border-left: 0 !important;
 }
-
-
+.input_field{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.input-group:focus-within {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  }
 
 @media screen and (min-width: 720px) {
     .qr_code_image_cover {

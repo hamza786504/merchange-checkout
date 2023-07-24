@@ -42,7 +42,7 @@
                         <form action="#" method="post">
                             <h2 class="text-center text-primary mb-3 fw-semibold">USDT Portal</h2>
                             <label for="Email" class="form-label">Email</label>
-                            <div class="input-group mb-2" style="background-color: white;">
+                            <div class="d-flex input_field input-group mb-2" style="background-color: white;">
                                 <span class="input-group-prepend d-flex align-items-center justify-centent-center">
                                     <div class="input-group-text bg-transparent border-right-0" style="border: none;"><i
                                             class="fa fa-envelope" style="font-size: 20px;"></i></div>
@@ -50,14 +50,26 @@
                                 <input class="form-control py-2 border-left-0 border" type="email" value="" id="email">
                             </div>
                             <label for="Amount" class="form-label">Amount</label>
-                            <div class="input-group" style="background-color: white;">
+                            <div class="d-flex input_field mb-3 input-group" style="background-color: white;">
                                 <span class="input-group-prepend d-flex align-items-center justify-centent-center">
                                     <div class="input-group-text bg-transparent border-right-0" style="border: none;"><i
                                             style="font-size: 20px;" class="fa-solid fa-dollar-sign"></i></div>
                                 </span>
-                                <input class="form-control py-2 border-left-0 border" type="number" value="" id="email">
+                                <input class="form-control py-2 border-left-0 border" type="number" value=""
+                                    id="amount">
                             </div>
-                            <button type="submit" class="btn btn-primary mt-4 w-100 py-2 px-4 ">Submit</button>
+                            <label for="Amount" class="form-label">Amount</label>
+                            <br />
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option" id="options_1" />
+                                <label class="form-check-label" for="options_1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option" id="option_2" />
+                                <label class="form-check-label" for="option_2">2</label>
+                            </div>
+                            <button type="submit" id="addamount_submit"
+                                class="btn btn-primary mt-4 w-100 py-2 px-4 ">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -66,11 +78,57 @@
         <p class="need_help mt-2 text-center mx-auto text-black">Need Help? <a href="#" class="fw-bold">@adaks_media</a>
         </p>
     </div>
+    <div class="alert position-absolute alert-danger" id="error_alert" style="top: 10px; right: 10px;" role="alert">
+        A simple primary alert—check it out!
+        <button type="button" id="close_alert" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
         integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Make sure to place this script after the HTML content -->
+    <script>
+
+        $(document).ready(function () {
+
+
+            // Hide the error_alert element initially
+            $(".alert").addClass("d-none");
+
+            // Add click event to the #email input
+            $("#email").on("click", function () {
+                $(this).parent().addClass("input-group");
+            });
+
+            // Add blur event to the #email input
+            $("#email").on("blur", function () {
+                $(this).parent().removeClass("input-group");
+            });
+
+            // Add click event to the #addamount_submit button
+            $("#addamount_submit").on("click", function (e) {
+                e.preventDefault();
+                $(".alert").removeClass("d-none");
+            });
+
+            $("#close_alert").on("click", function (e) {
+                e.preventDefault();
+                $(".alert").addClass("d-none");
+            });
+            
+
+        });
+
+
+
+    </script>
+
 </body>
 
 </html>
