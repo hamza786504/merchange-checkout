@@ -156,7 +156,7 @@ table td:nth-child(2):hover {
 }
 .col-right{
     border-top: 1px dashed black;
-    border-left: 0 !important;
+    border-left: 0;
 }
 .input_field{
     overflow: hidden;
@@ -175,6 +175,8 @@ table td:nth-child(2):hover {
     .video_heading{
         font-size: 20px;
     }
+}
+@media screen and (min-width: 768px) {
     .col-right{
         border-left: 1px dashed black;
     }
@@ -182,6 +184,7 @@ table td:nth-child(2):hover {
         border-top: none;
     }
 }
+
 @media screen and (max-width: 300px) {
     .detail_box p , .detail_box .row p , .detail_box a{
         font-size: 13px;
